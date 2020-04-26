@@ -11,6 +11,11 @@
     <RepositoryType>GIT</RepositoryType>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <FileVersion>1.0.0.2</FileVersion>
+    <Description>C# Net Core SDK to interact with Facebook's Graph API for Instagram</Description>
+    <PackageProjectUrl>https://github.com/SubPixel-it/instagram-sdk-dotnet</PackageProjectUrl>
+    <PackageTags>instagram,facebook,graph-api,sdk</PackageTags>
+    <PackageReleaseNotes>First release. It allows to get user's id, username and feed.</PackageReleaseNotes>
+    <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
