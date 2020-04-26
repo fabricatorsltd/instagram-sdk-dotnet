@@ -1,5 +1,7 @@
 # Instagram .Net SDK
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/606a1f111fbe46d69bca2b1b8bfef2a9)](https://app.codacy.com/gh/SubPixel-it/instagram-sdk-dotnet?utm_source=github.com&utm_medium=referral&utm_content=SubPixel-it/instagram-sdk-dotnet&utm_campaign=Badge_Grade_Dashboard)
+
 This project is born for a personal need, I'm not sure yet if it is going to have a future as public and maintained repository.
 
 ## Useful links
