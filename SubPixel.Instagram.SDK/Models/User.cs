@@ -1,5 +1,15 @@
+/* 
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/. 
+ *
+ * Author: Pietro di Caprio <pietro.dicaprio@subpixel.it>
+ * Please open an issue on GitHub for any problem or question.
+ */
+
 using System;
 using System.Collections.Generic;
+using System.Text;
 using Newtonsoft.Json;
 
 namespace SubPixel.Instagram.SDK.Models
@@ -31,15 +41,19 @@ namespace SubPixel.Instagram.SDK.Models
         {
             string url = client.APIEndpoint;
             url += String.Format("{0}/?fields=", userId == 0 ? "me" : userId.ToString());
-            string _scopes = "";
+            StringBuilder _scopes = new StringBuilder();
             if (scopes != null)
             {
                 foreach (Scope scope in scopes)
-                    _scopes += "," + scope;
+                {
+                    _scopes.Append("," + scope);
+                }
                 _scopes = _scopes.Remove(0, 1);
             }
             else
-                _scopes = "id,username,account_type,media_count";
+            {
+                _scopes = new StringBuilder("id,username,account_type,media_count");
+            }
             url += _scopes + client.AccessToken;
 
             return client.DoRequest(url, typeof(User));

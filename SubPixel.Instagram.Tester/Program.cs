@@ -1,4 +1,13 @@
-﻿using SubPixel.Instagram.SDK;
+﻿/* 
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/. 
+ *
+ * Author: Pietro di Caprio <pietro.dicaprio@subpixel.it>
+ * Please open an issue on GitHub for any problem or question.
+ */
+
+using SubPixel.Instagram.SDK;
 using SubPixel.Instagram.SDK.Models;
 using System;
 using System.Collections.Generic;
@@ -7,13 +16,12 @@ namespace SubPixel.Instagram.Tester
 {
     class Program
     {
-        static Client igClient;
         const string AUTH_TOKEN = "";
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            igClient = new Client(AUTH_TOKEN);
+            Console.WriteLine("SubPixel Instagram SDK tester");
+            Client igClient = new Client(AUTH_TOKEN);
 
             List<User.Scope> userScopes = new List<User.Scope>();
             userScopes.Add(User.Scope.id);

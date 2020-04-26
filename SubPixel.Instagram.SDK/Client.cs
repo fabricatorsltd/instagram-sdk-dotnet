@@ -1,4 +1,13 @@
-﻿using System;
+﻿/* 
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/. 
+ *
+ * Author: Pietro di Caprio <pietro.dicaprio@subpixel.it>
+ * Please open an issue on GitHub for any problem or question.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Dynamic;
 using System.IO;
@@ -10,21 +19,24 @@ namespace SubPixel.Instagram.SDK
     public class Client
     {
         public string APIEndpoint { get { return "https://graph.instagram.com/"; } }
-        public bool IsProduction { get; internal set; }
         public string AccessToken { get; internal set; }
 
         public Client(
             string accessToken)
         {
-            if(!accessToken.StartsWith("&access_token="))
-			    accessToken = "&access_token=" + accessToken;
+            if (!accessToken.StartsWith("&access_token="))
+            {
+                accessToken = "&access_token=" + accessToken;
+            }
             AccessToken = accessToken;
         }
 
         public Models.IGraphResponse DoRequest(string url, Type returnObj)
         {
             if (returnObj.GetInterface("IGraphResponse") == null)
+            {
                 return null;
+            }
 
             WebClient webClient = new WebClient();
 
@@ -47,7 +59,7 @@ namespace SubPixel.Instagram.SDK
             {
                 dynamic error = new ExpandoObject();
                 error.Message = ex.Message;
-                return new Models.Error()
+                return new Models.Error
                 {
                     Code = -1,
                     Message = ex.Message
