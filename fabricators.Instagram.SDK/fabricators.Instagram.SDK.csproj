@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.1.0</Version>
+    <Authors>fabricators</Authors>
+    <Product>Instagram SDK</Product>
+    <Copyright>fabricators 2021</Copyright>
+    <RepositoryUrl>https://github.com/fabricatorsltd/instagram-sdk-dotnet</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <VersionSuffix Condition=" '$(VersionSuffix)' == '' ">0</VersionSuffix>
+    <AssemblyVersion>1.1.0</AssemblyVersion>
+    <FileVersion>1.1.0.$(VersionSuffix)</FileVersion>
+    <Description>C# Net Core SDK to interact with Facebook's Graph API for Instagram</Description>
+    <PackageProjectUrl>https://github.com/fabricatorsltd/instagram-sdk-dotnet</PackageProjectUrl>
+    <PackageTags>instagram,facebook,graph-api,sdk</PackageTags>
+    <PackageReleaseNotes>Downgrade Target Framework to 2.1 in order to increase compatibility.</PackageReleaseNotes>
+    <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="fabricators_icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

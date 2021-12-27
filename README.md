@@ -3,7 +3,7 @@
 This project is born for a personal need, I'm not sure yet if it is going to have a future as public and maintained repository.
 
 ## Badges
-[![CodeFactor](https://www.codefactor.io/repository/github/subpixel-it/instagram-sdk-dotnet/badge)](https://www.codefactor.io/repository/github/subpixel-it/instagram-sdk-dotnet) [![License Badge](https://img.shields.io/badge/license-MPL--2.0-blue)](https://github.com/SubPixel-it/instagram-sdk-dotnet/blob/master/LICENSE) ![.NET](https://github.com/SubPixel-it/instagram-sdk-dotnet/workflows/.NET/badge.svg) [![NuGet](https://img.shields.io/nuget/v/SubPixel.Instagram.SDK.svg?style=square&label=nuget)](https://www.nuget.org/packages/SubPixel.Instagram.SDK/)
+[![CodeFactor](https://www.codefactor.io/repository/github/fabricatorsltd/instagram-sdk-dotnet/badge)](https://www.codefactor.io/repository/github/fabricatorsltd/instagram-sdk-dotnet) [![License Badge](https://img.shields.io/badge/license-MPL--2.0-blue)](https://github.com/fabricatorsltd/instagram-sdk-dotnet/blob/master/LICENSE) ![.NET](https://github.com/fabricatorsltd/instagram-sdk-dotnet/workflows/.NET/badge.svg) [![NuGet](https://img.shields.io/nuget/v/fabricators.Instagram.SDK.svg?style=square&label=nuget)](https://www.nuget.org/packages/SubPixel.Instagram.SDK/)
 
 ## Useful links
 *   [Instagram Graph API Docs](https://developers.facebook.com/docs/instagram-api)
